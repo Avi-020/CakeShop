@@ -8,11 +8,7 @@ import { useState } from "react";
 
 function Homepage() {
   const [isOpen, setIsOpen] = useState(false);
-  const [loading, setLoading] = useState<boolean>(true);
 
-  const handleImageLoad = () => {
-    setLoading(false);
-  };
   const products = [
     {
       name: "Birthday Cake in all Flavours",
@@ -201,20 +197,12 @@ function Homepage() {
               key={index}
               className="bg-white p-6 rounded-lg shadow-md text-center"
             >
-              {/* Loader */}
-              {loading && (
-                <div className="h-40 bg-gray-200 animate-pulse rounded-md mb-4"></div>
-              )}
-
               <Image
                 src={item.image}
-                alt={item.name}
-                width={300} // Set specific width and height
-                height={300}
-                className={`rounded-md mx-auto mb-4 ${
-                  loading ? "hidden" : "block"
-                }`}
-                onLoadingComplete={handleImageLoad}
+                alt="img"
+                width={0}
+                height={0}
+                className="rounded-md w-auto h-auto mx-auto mb-4"
               />
 
               <h3 className="mt-4 text-xl font-bold capitalize">{item.name}</h3>
@@ -228,6 +216,15 @@ function Homepage() {
 
         {/* Footer */}
         <footer className="bg-pink-500 text-white text-center py-6">
+          <div className="flex items-center space-x-2">
+            <Image
+              className="mt-2 ml-5"
+              src="/images/LOGO.png"
+              alt="Logo"
+              width={100}
+              height={100}
+            />
+          </div>
           <p>&copy; 2025 Sweetbitezz. All Rights Reserved.</p>
         </footer>
       </div>
