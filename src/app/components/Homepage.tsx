@@ -130,7 +130,7 @@ function Homepage() {
           {/* Left Section - Text and Buttons */}
           <div className="md:w-1/2 text-center md:text-left ml-5">
             <h2 className="text-3xl md:text-5xl font-bold text-pink-600">
-              Sweetbitezz – Where Every Bite is a Delight!
+              Sweetbitezz &#8211; Where Every Bite is a Delight!
             </h2>
             <p className="text-lg text-gray-600 mt-4">
               Sweetbitezz brings you freshly baked delights made with love and
