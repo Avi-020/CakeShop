@@ -200,8 +200,8 @@ function Homepage() {
               <Image
                 src={item.image}
                 alt="img"
-                width={0}
-                height={0}
+                width={300}
+                height={300}
                 className="rounded-md w-auto h-auto mx-auto mb-4"
               />
 
