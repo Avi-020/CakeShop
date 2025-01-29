@@ -181,8 +181,8 @@ function Homepage() {
           <div className="bg-pink-500 text-white p-6 rounded-lg">
             <h3 className="text-xl font-bold">Have you tried our new cake?</h3>
             <p className="mt-2 text-sm">
-              "Indulge in the rich taste of our latest cake flavors. From
-              classic favorites to unique creations, every bite is a delightful
+              Indulge in the rich taste of our latest cake flavors. From classic
+              favorites to unique creations, every bite is a delightful
               experience{" "}
             </p>
             <button className="mt-4 bg-white text-pink-500 px-4 py-2 rounded-lg">
